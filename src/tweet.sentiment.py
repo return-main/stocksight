@@ -11,12 +11,11 @@ stocksight is released under the Apache 2.0 license. See
 LICENSE for the full license text.
 """
 
-import argparse
 import sys
 from random import randint
 
-from StockSight.TweetListener import *
-from StockSight.EsMap.Sentiment import *
+from StockSight.TweetStreamListener import *
+from StockSight.EsMap.Sentiment import mapping
 from tweepy import API, Stream, OAuthHandler, TweepError
 
 
@@ -60,7 +59,7 @@ if __name__ == '__main__':
         useridlist = []
         useridlist = get_twitter_users_from_file(TweetStreamListener.twitter_users_file)
 
-        if len(useridlist) is 0:
+        if len(useridlist) == 0:
             logger.info("Fetching Twitter user ids from Twitter...")
             logger.info(str(len(useridlist)) + '---'+str(len(twitter_feeds)))
             while True:
@@ -116,4 +115,3 @@ if __name__ == '__main__':
         sys.exit(0)
     except Exception as e:
         logger.warning("%s" % e)
-        pass

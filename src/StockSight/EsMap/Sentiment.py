@@ -15,37 +15,37 @@ mapping = {
             "author": {
                 "type": "text",
                 "fields": {
-                      "keyword": {
+                    "keyword": {
                         "type": "keyword",
                         "ignore_above": 256
-                      }
+                    }
                 }
             },
             "referer_url": {
                 "type": "text",
                 "fields": {
-                      "keyword": {
+                    "keyword": {
                         "type": "keyword",
                         "ignore_above": 256
-                      }
+                    }
                 }
             },
             "url": {
                 "type": "text",
                 "fields": {
-                      "keyword": {
+                    "keyword": {
                         "type": "keyword",
                         "ignore_above": 256
-                      }
+                    }
                 }
             },
             "location": {
                 "type": "text",
                 "fields": {
-                      "keyword": {
+                    "keyword": {
                         "type": "keyword",
                         "ignore_above": 256
-                      }
+                    }
                 }
             },
             "date": {
@@ -54,10 +54,10 @@ mapping = {
             "title": {
                 "type": "text",
                 "fields": {
-                      "keyword": {
+                    "keyword": {
                         "type": "keyword",
                         "ignore_above": 256
-                      }
+                    }
                 }
             },
             "message": {
@@ -75,10 +75,10 @@ mapping = {
             "sentiment": {
                 "type": "text",
                 "fields": {
-                      "keyword": {
+                    "keyword": {
                         "type": "keyword",
                         "ignore_above": 256
-                      }
+                    }
                 }
             },
             "msg_polarity": {
@@ -90,10 +90,10 @@ mapping = {
             "msg_sentiment": {
                 "type": "text",
                 "fields": {
-                      "keyword": {
+                    "keyword": {
                         "type": "keyword",
                         "ignore_above": 256
-                      }
+                    }
                 }
             }
         }
