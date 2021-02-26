@@ -65,6 +65,9 @@ news_cycle=${news_cycle%%.*}
 echo "Spawning Tweet Sentiment receiver instance";
 python tweet.sentiment.py &
 
+echo "Spawning Past Tweets Sentiment receiver instance";
+python twint.sentiment.py &
+
 while true
 do
     echo "Spawning stock price receiver instance";
