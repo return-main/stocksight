@@ -10,7 +10,7 @@ WORKDIR /usr/src/app
 
 ADD requirements.txt ./requirements.txt
 
-RUN apk --no-cache add curl
+RUN apk --no-cache add curl gcc musl-dev
 
 RUN pip install --no-cache-dir -r requirements.txt
 
