@@ -48,9 +48,9 @@ class TwintStream(Stream):
                     'screen_name': tweet['username'],
                     'location': tweet['place'],
                     'lang': tweet['lang'],
-                    'friends_count': -1,
-                    'followers_count': -1,
-                    'statuses_count': -1,
+                    'friends_count': 1,
+                    'followers_count': 1001,
+                    'statuses_count': 1,
                 }
             }
 
