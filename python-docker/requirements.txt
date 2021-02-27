@@ -10,3 +10,4 @@ redis
 pyyaml
 fake-useragent
 git+https://github.com/twintproject/twint.git@origin/master#egg=twint
+pytz

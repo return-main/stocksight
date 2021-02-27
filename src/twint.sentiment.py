@@ -18,12 +18,19 @@ from StockSight.EsMap.Sentiment import mapping
 
 from StockSight.TwintStream import TwintStream
 
+import time
+from pytz import UTC
+from os import environ
 
 STOCKSIGHT_VERSION = '0.2'
 __version__ = STOCKSIGHT_VERSION
 
 
 if __name__ == '__main__':
+
+    # Set timezone to UTC (To have the correct timestamps)
+    environ['TZ'] = UTC.zone
+    time.tzset()
 
     twitter_feeds = config['twitter']['feeds']
 

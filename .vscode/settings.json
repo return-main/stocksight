@@ -2,6 +2,8 @@
     "cSpell.words": [
         "NLTK",
         "Twint",
-        "tweepy"
+        "pytz",
+        "tweepy",
+        "tzset"
     ]
 }
