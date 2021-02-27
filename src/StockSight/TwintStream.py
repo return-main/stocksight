@@ -41,13 +41,13 @@ class TwintStream(Stream):
 
             # Object to send
             to_send = {
-                'text': tweet.tweet,
+                'text': tweet['tweet'],
                 'created_at': created_at,
-                'id': tweet.id,
+                'id': tweet['id'],
                 'user': {
-                    'screen_name': tweet.username,
-                    'location': tweet.place,
-                    'lang': tweet.lang,
+                    'screen_name': tweet['username'],
+                    'location': tweet['place'],
+                    'lang': tweet['lang'],
                     'friends_count': -1,
                     'followers_count': -1,
                     'statuses_count': -1,
